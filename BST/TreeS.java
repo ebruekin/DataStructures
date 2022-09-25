@@ -47,4 +47,27 @@ public class TreeS {
             System.out.print(root.data + " ");
         }
     }
+
+    int height(Node root){
+        if(root == null){
+            return -1;
+        }else{
+            int l=0;
+            int r=0;
+            l = height(root.left);
+            r = height(root.right);
+            if(l>r)
+                return l+ 1;
+            else
+                return r +1;
+        }
+    }
+
+    int size(Node root){
+        if(root == null){
+            return 0;
+        }else{
+            return size(root.left ) + 1 + size(root.right) ;
+        }
+    }
 }

@@ -26,6 +26,10 @@ public class Main{
         System.out.println(" ");
 
         System.out.print("root data : " + t.root.data);
+        System.out.println(" ");
+
+        System.out.println("Height = " + t.height(t.root));
+        System.out.println("Size = " + t.size(t.root));
 
 
     }
